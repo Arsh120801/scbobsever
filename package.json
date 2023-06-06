@@ -1,4 +1,14 @@
 {
+  "name": "scobserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
