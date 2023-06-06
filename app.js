@@ -114,8 +114,9 @@ app.get('/login',setHeaders,async(req,res)=>{
 //logout api
 app.get('/logout',(req,res)=>{
     const user= req.session.user;
-    res.send(`${user}logged out!`)
+    //res.send(`${user}logged out!`)
     req.session.user=null;
+    res.send("logged out");
     //console.log(req.session.user);
 })
 
