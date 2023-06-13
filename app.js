@@ -88,7 +88,7 @@ app.post('/signup',setHeaders,async(req,res)=>{
 })
 
 //login api
-app.get('/login',setHeaders,async(req,res)=>{
+app.post('/login',setHeaders,async(req,res)=>{
     
     const email = req.body.email;
     const pass = req.body.password;
