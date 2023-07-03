@@ -102,11 +102,11 @@ app.post('/login',async(req,res)=>{
            }
         })
         if(!comparepsd){
-            res.json("wrong id/password")
+            res.json("jsn-wrong id/password")
         }
         else{
             req.session.user={email,id:'scb'}
-            res.json("logged in!");
+            res.json("jsn-logged in!");
         }
     })
 })
