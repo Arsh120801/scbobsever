@@ -88,7 +88,7 @@ app.post('/signup',setHeaders,async(req,res)=>{
 })
 
 //login api
-app.get('/login',setHeaders,async(req,res)=>{
+app.post('/login',async(req,res)=>{
     
     const email = req.body.email;
     const pass = req.body.password;
@@ -102,11 +102,11 @@ app.get('/login',setHeaders,async(req,res)=>{
            }
         })
         if(!comparepsd){
-            res.send("wrong id/password")
+            res.json("wrong id/password")
         }
         else{
             req.session.user={email,id:'scb'}
-            res.send("logged in!");
+            res.json("logged in!");
         }
     })
 })
